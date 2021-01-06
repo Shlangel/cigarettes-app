@@ -1,0 +1,6 @@
+<button (click)="initPack()">Initialize pack!</button>
+
+<div>
+  Current pack is {{ (currentPack$ | async).name }} and cigarretes left:
+  {{ (currentPack$ | async).count }}
+</div>
