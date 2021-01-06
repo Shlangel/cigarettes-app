@@ -1,3 +1,47 @@
 .main-container {
   height: 100%;
+
+  .side-menu {
+    position: fixed;
+    z-index: 1;
+  }
+}
+
+.sidenav-content {
+  position: fixed;
+  height: 100%;
+  display: flex;
+
+  .side-menu-button {
+    cursor: pointer;
+    margin: auto;
+    background-color: white;
+    outline: none;
+    height: 44px;
+    border: solid #0089ff;
+    margin-left: -35px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+
+    .circle {
+      background: #84b9e6;
+      height: 46px;
+      width: 46px;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      box-shadow: inset -12px -11px 12px #0089ff, 4px 5px 15px -4px black;
+    }
+
+    &:active .circle {
+      box-shadow: inset 14px 13px 16px #0c4f88;
+    }
+  }
+}
+
+.main-content {
+  position: absolute;
+  top: 50%;
+  left: 40%;
 }
